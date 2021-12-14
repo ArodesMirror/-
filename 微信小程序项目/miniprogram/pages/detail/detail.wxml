@@ -1,0 +1,40 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="detail">
+  <!-- 金额输入框 -->
+  <view class="moneyBox {{info.costType}}">
+    <input type="digit" maxlength="20" value="{{info.money}}" bindchange="getNewDate" data-type="money"/>
+  </view>
+  <!-- 信息列表 -->
+  <view class="infoList">
+    <view class="infoTitle">
+      <text class="iconfont icon-fenlei income"></text>
+      分类
+    </view>
+    <view class="infoVal">{{info.iconTitle}}</view>
+  </view>
+
+  <picker mode="date" bindchange="getNewDate" data-type="date">
+    <view class="infoList">
+    <view class="infoTitle">
+      <text class="iconfont icon-riqi pay"></text>
+      日期
+    </view>
+    <view class="infoVal">{{time}}</view>
+  </view>
+  </picker>
+
+  <view class="infoList">
+    <view class="infoTitle">
+      <text class="iconfont icon-jilu"></text>
+      备注
+    </view>
+    <view class="infoVal">
+      <input type="text" placeholder="备注" value="{{info.comment}}" bindchange="getNewDate" data-type="comment"/>
+    </view>
+  </view>
+</view>
+<!-- 按钮 -->
+<view class="btnBox">
+    <view class="setBtn" bindtap="setMsgData">编辑</view>
+    <view class="deleteBtn" bindtap="deleteMsgData">删除</view>
+</view>

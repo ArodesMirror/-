@@ -1,0 +1,55 @@
+.detail{
+  padding: 0 30rpx;
+}
+/* 金额输入框的样式 */
+.moneyBox{
+  padding: 20rpx 0;
+}
+.moneyBox input{
+  font-size: 100rpx;
+  height: 120rpx;
+}
+/* 信息列表样式 */
+.infoList{
+  font-size: 32rpx;
+  display: flex;
+  border-top: 1px solid #ededed;
+  padding: 30rpx 0;
+}
+.infoList .infoTitle{
+  width: 120rpx;
+  color: #999;
+}
+.infoList .infoTitle .iconfont{
+  font-size: 32rpx;
+}
+.infoList .infoTitle .icon-jilu{
+  color: gold;
+}
+.infoList .infoVal{
+  width: calc(100% - 120rpx);
+}
+/* 按钮样式 */
+.btnBox{
+  width: 100%;
+  position: fixed;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.btnBox .setBtn{
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #26b59a;
+  text-align: center;
+  color: #fff;
+}
+.btnBox .deleteBtn{
+  width: 30%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border: 1px solid rgb(194, 190, 190);
+  color: #e4393c;
+}

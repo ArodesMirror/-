@@ -1,0 +1,114 @@
+.header{
+  background-color: #26b59a;
+  padding: 0 30rpx;
+  color: #ffffff;
+  position: sticky;     /*黏贴定位*/
+  top: 0;
+  height: 280rpx;
+}
+.surolusBox{
+  text-align: center;
+}
+.surplusBox .surTitle{
+  font-size: 28rpx;
+}
+.surplusBox .surMoney{
+  font-size: 50rpx;
+}
+.costItem{
+  width: 50%;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  padding-bottom: 40rpx;
+  box-sizing: border-box;
+}
+.costItem .costMoney{
+  /* 单行文本超出隐藏并且用...代替 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pl{
+  padding-left: 90rpx;
+}
+.pr{
+  padding-right: 90rpx;
+}
+/*  按钮样式 */
+.penBox{
+  position: sticky;
+  top: 280rpx;
+  height: 90rpx;
+  background-color: #fff;
+}
+.penBox .penBtn{
+  position: absolute;
+  top: -90rpx;
+  left: 50%;
+  margin-left: -90rpx;
+  width: 180rpx;
+  height: 180rpx;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.penBox .penBtn .pen{
+  width: 140rpx;
+  height: 140rpx;
+  background-color: #26b59a;
+  border-radius: 50%;
+  margin: 20rpx;
+}
+.penBox .penBtn .pen image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+}
+/* 数据列表样式 */
+.dataList{
+  padding: 0 20rpx;
+}
+.dataList .dataInfo{
+  color: #999;
+  font-size: 24rpx;
+}
+.dataList .dataInfo .dataTime text{
+  margin-right: 8rpx;
+}
+.dataList .dataInfo .dataCost text{
+  margin-left: 8rpx;
+}
+
+/* 数据样式 */
+.listItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 0;
+}
+.listItem .listLeft image{
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+}
+.listItem .listLeft text{
+  font-weight: bold;
+}
+.listItem .listRight{
+  font-weight: bold;
+}
+/* 没有数据的样式布局 */
+.nothingImg{
+  width: 250rpx;
+  height: 162rpx;
+  margin: 150rpx auto 0;
+}
+.nothingImg image{
+  width: 100%;
+  height: 100%;
+}
+.nothingText{
+  text-align: center;
+  font-size: 28rpx;
+  color: #999;
+}

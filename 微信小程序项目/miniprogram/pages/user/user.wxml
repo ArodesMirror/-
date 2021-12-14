@@ -1,0 +1,73 @@
+<view class="user">
+<!-- 用户信息 -->
+<view class="userInfo">
+  <!-- 头像 -->
+  <view class="userImg">
+    <image src="{{userInfo.avatarUrl}}" wx:if="{{isLogin}}"></image>
+    <button bindtap="getUserInfo" wx:else>获取头像</button>
+  </view>
+  <!-- 昵称 -->
+  <view class="userName">{{userInfo.nickName}}</view>
+</view>
+
+  <!-- 列表 -->
+  <view class="list" bindtap="tofenlei">
+    <!-- 左边 -->
+    <view class="listTitle">
+      <text class="iconfont icon-2 color-1"></text>
+      分类
+    </view>
+    <!-- 右边 -->
+    <view class="iconfont icon-xiangyou"></view>
+  </view>
+
+  <view class="list">
+    <!-- 左边 -->
+    <view class="listTitle">
+      <text class="iconfont icon-zhanghuzichan color-2"></text>
+      账户
+    </view>
+    <!-- 右边 -->
+    <view class="iconfont icon-xiangyou"></view>
+  </view>
+
+  <view class="list">
+    <!-- 左边 -->
+    <view class="listTitle">
+      <text class="iconfont icon-shengban-shengji color-3"></text>
+      升级APP
+    </view>
+    <!-- 右边 -->
+    <view class="iconfont icon-xiangyou"></view>
+  </view>
+
+  <view class="list">
+    <!-- 左边 -->
+    <view class="listTitle">
+      <text class="iconfont icon-iconyijianfankui color-4"></text>
+      意见反馈
+    </view>
+    <!-- 右边 -->
+    <view class="iconfont icon-xiangyou"></view>
+  </view>
+
+  <view class="list">
+    <!-- 左边 -->
+    <view class="listTitle">
+      <text class="iconfont icon-shezhi color-1"></text>
+      设置
+    </view>
+    <!-- 右边 -->
+    <view class="iconfont icon-xiangyou"></view>
+  </view>
+
+  <view class="list">
+    <!-- 左边 -->
+    <view class="listTitle">
+      <text class="iconfont icon-fenxiang color-2"></text>
+      分享给好友
+    </view>
+    <!-- 右边 -->
+    <view class="iconfont icon-xiangyou"></view>
+  </view>
+</view>

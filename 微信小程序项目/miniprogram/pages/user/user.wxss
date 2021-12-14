@@ -1,0 +1,59 @@
+/* 用户信息样式 */
+.userInfo{
+  background-color: #26b59a;
+  padding: 30rpx 0;
+}
+/* 头像样式 */
+.userInfo .userImg{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.userInfo .userImg button{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  line-height: 200rpx;
+}
+.userInfo .userImg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/* 昵称样式 */
+.userInfo .userName{
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+/* 列表的样式 */
+.list{
+  padding: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #ededed;
+  font-size: 32rpx;
+}
+.icon-xiangyou{
+  color: #999;
+}
+/* 颜色类名 */
+.color-1{
+  color: #fc678f;
+}
+.color-2{
+  color: #6cabfd;
+}
+.color-3{
+  color: #fd7361;
+}
+.color-4{
+  color: #ffbe00;
+}

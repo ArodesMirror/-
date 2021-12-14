@@ -1,0 +1,115 @@
+<view class="classification">
+  <view>
+    分类：
+  </view>
+  <!-- 头部 收入支出按钮 保存 -->
+  <view class="header">
+  <!-- 收入支出 -->
+  <view class="headerBox">
+      <view class="headerItem {{item.isAct ? 'active' : ''}}"  wx:for="{{costTitle}}" 
+      wx:key="index" bindtap="titleTap" data-index="{{index}}">{{item.name}}</view>
+    </view>
+  <view class="contentBox">
+      <!-- 图标轮播图 -->
+      <view class="iconBanner">
+        <!-- 支出轮播图 -->
+          <swiper class="iconSwiper" indicator-dots="true" indicator-color="#999999" 
+          indicator-active-color="#26b59a" current="{{currentNum}}" wx:if="{{costTitle[0].isAct}}" >
+            <swiper-item wx:for="{{bannerIcon.pay}}" wx:key="index">
+              <view class="iconBox clearfix">
+                <!-- 单个图标 -->
+                <view class="iconItem fl {{data.isAct ? 'active' : ''}}" wx:for="{{item}}" wx:for-item="data" wx:for-index="id" wx:key="id" bindtap="bannerIconTop" data-type="pay" data-index="{{index}}" data-id="{{id}}">
+                  <!-- 图标 -->
+                  <view class="iconImg">
+                    <image src="{{data.imgUrl}}"></image>
+                  </view>
+                  <!-- 标题 -->
+                  <view class="iconTitle">{{data.title}}</view>
+                </view>
+              </view>
+            </swiper-item>
+          </swiper>
+        <!-- 收入轮播图 -->
+        <swiper class="iconSwiper" indicator-dots="true" indicator-color="#999999" 
+          indicator-active-color="#d78485" current="{{currentNum}}" wx:else>
+            <swiper-item wx:for="{{bannerIcon.income}}" wx:key="index">
+              <view class="iconBox">
+                <!-- 单个图标 -->
+                <view class="iconItem fl {{data.isAct ? 'active' : ''}}" wx:for="{{item}}" wx:for-item="data" wx:for-index="id" wx:key="id" bindtap="bannerIconTop" data-type="income" data-index="{{index}}" data-id="{{id}}">
+                  <!-- 图标 -->
+                  <view class="iconImg">
+                    <image src="{{data.imgUrl}}"></image>
+                  </view>
+                  <!-- 标题 -->
+                  <view class="iconTitle">{{data.title}}</view>
+                </view>
+              </view>
+            </swiper-item>
+          </swiper>
+      </view>
+
+    </view>
+  </view>
+  <view>金额：</view>
+  <!-- 数据 -->
+  <view class="listItem" wx:for="{{item.info}}" wx:for-item="info" wx:for-index="id" wx:key="id" bindtap="navToDetail" data-index="{{info._id}}">
+          <!-- 左边 图标 标题 -->
+          <view class="listLeft">
+            <image src="{{info.iconUrl}}"></image>
+            <text>{{info.iconTitle}}</text>
+          </view>
+          <!-- 右边 金额 -->
+          <view class="listRight {{info.costType}}">{{info.costType == 'pay' ? '-':'+'}}￥{{info.money}}</view>
+        </view>
+        <view class="list">
+    <!-- 左边 -->
+    <view class="listTitle">
+      <text class="iconfont icon-zhanghuzichan color-2"></text>
+      座机费：
+    </view>
+    <view class="pay">30.00</view>
+    <!-- 右边 -->
+    <view class="iconfont icon-xiangyou"></view>
+  </view>
+  <!-- 数据 -->
+  <view class="listItem" wx:for="{{item.info}}" wx:for-item="info" wx:for-index="id" wx:key="id" bindtap="navToDetail" data-index="{{info._id}}">
+          <!-- 左边 图标 标题 -->
+          <view class="listLeft">
+            <image src="{{info.iconUrl}}"></image>
+            <text>{{info.iconTitle}}</text>
+          </view>
+          <!-- 右边 金额 -->
+          <view class="listRight {{info.costType}}">{{info.costType == 'pay' ? '-':'+'}}￥{{info.money}}</view>
+        </view>
+        <view class="list">
+    <!-- 左边 -->
+    <view class="listTitle">
+      <text class="iconfont icon-zhanghuzichan color-2"></text>
+      座机费：
+    </view>
+    <view class="pay">60.00</view>
+    <!-- 右边 -->
+    <view class="iconfont icon-xiangyou"></view>
+  </view>
+  <!-- 数据 -->
+  <view class="listItem" wx:for="{{item.info}}" wx:for-item="info" wx:for-index="id" wx:key="id" bindtap="navToDetail" data-index="{{info._id}}">
+          <!-- 左边 图标 标题 -->
+          <view class="listLeft">
+            <image src="{{info.iconUrl}}"></image>
+            <text>{{info.iconTitle}}</text>
+          </view>
+          <!-- 右边 金额 -->
+          <view class="listRight {{info.costType}}">{{info.costType == 'pay' ? '-':'+'}}￥{{info.money}}</view>
+        </view>
+        <view class="list">
+    <!-- 左边 -->
+    <view class="listTitle">
+      <text class="iconfont icon-zhanghuzichan color-2"></text>
+      座机费：
+    </view>
+    <view class="pay">30.00</view>
+    <!-- 右边 -->
+    <view class="iconfont icon-xiangyou"></view>
+  </view>
+  
+</view>
